@@ -1,0 +1,76 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* site layout */
+body {
+  display: grid;
+  grid-template-columns: 1em 1fr 1em;
+  grid-template-areas:
+    ".... .... ...."
+    ".... head ...."
+    ".... main ...."
+    ".... foot ...."
+    ".... .... ....";
+  gap: 1em 0;
+}
+
+.site-header {
+  grid-area: head;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: foot;
+}
+
+/* Typography */
+ul {
+  list-style: none;
+}
+
+/* li {
+    text-transform: uppercase;
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 12px;
+ } */
+
+/* span {
+    font-family: Roboto;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 13.55px;
+ } */
+
+/* Images */
+
+img {
+  width: 100%;
+}
+
+.logo-img {
+  max-width: 24px;
+}
+
+/* header compoment */
+
+.site-logo-container {
+  display: flex;
+  align-items: center;
+
+  gap: 0.2em;
+}
+
+.site-title {
+  font-family: Roboto;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 13.55px;
+}
