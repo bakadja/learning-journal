@@ -2,6 +2,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 /* site layout */
@@ -31,6 +32,7 @@ footer {
 
 /* Typography */
 ul {
+  padding: 0;
   list-style: none;
 }
 
@@ -40,13 +42,6 @@ ul {
     font-weight: 600;
     font-style: SemiBold;
     font-size: 12px;
- } */
-
-/* span {
-    font-family: Roboto;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 13.55px;
  } */
 
 /* Images */
@@ -59,18 +54,36 @@ img {
   max-width: 24px;
 }
 
-/* header compoment */
+/* header */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+}
 
 .site-logo-container {
   display: flex;
   align-items: center;
-
   gap: 0.2em;
 }
 
 .site-title {
-  font-family: Roboto;
   font-weight: 700;
   font-style: Bold;
-  font-size: 13.55px;
+  font-size: .9rem;
+}
+
+/* nav */
+.site-nav {
+  flex-basis: 150px;
+  font-weight: 600;
+  font-size: .8rem;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+}
+.nav-item {
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
