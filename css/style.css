@@ -15,7 +15,7 @@ body {
     ".... main ...."
     ".... foot ...."
     ".... .... ....";
-  gap: 1em 0;
+  gap: 2em 0;
 }
 
 .site-header {
@@ -31,27 +31,17 @@ footer {
 }
 
 /* Typography */
+h1 {
+  font-size: 2rem;
+}
+
 ul {
   padding: 0;
   list-style: none;
 }
 
-/* li {
-    text-transform: uppercase;
-    font-family: Source Sans Pro;
-    font-weight: 600;
-    font-style: SemiBold;
-    font-size: 12px;
- } */
-
-/* Images */
-
 img {
   width: 100%;
-}
-
-.logo-img {
-  max-width: 24px;
 }
 
 /* header */
@@ -66,24 +56,64 @@ img {
   gap: 0.2em;
 }
 
+.site-logo-img {
+  max-width: 24px;
+}
+
 .site-title {
   font-weight: 700;
   font-style: Bold;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 /* nav */
 .site-nav {
   flex-basis: 150px;
   font-weight: 600;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .nav-list {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-item {
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+/* main  */
+/* main article */
+
+.main-article {
+  display: grid;
+  grid-column: 1fr;
+  gap: 1em;
+}
+
+.main-article-title {
+  font-weight: 700;
+}
+
+.main-article h1,
+.main-article p {
+  margin: 0;
+}
+
+.main-article-intro {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.main-article-date {
+  grid-row: 1 / 2;
+}
+
+.main-article-image {
+  object-fit: cover;
+  height: 60%;
+  max-width: 374px;
+  border-radius: 3px;
 }
