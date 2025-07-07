@@ -109,6 +109,8 @@ img {
 
 .main-article-date {
   grid-row: 1 / 2;
+  color: #151515;
+  font-size: 0.75rem;
 }
 
 .main-article-image {
@@ -134,4 +136,6 @@ img {
 .highlight {
   font-weight: 700;
 }
+/* recent-posts section */
+
 
