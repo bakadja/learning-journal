@@ -44,7 +44,9 @@ img {
   width: 100%;
 }
 
-/* header */
+/* ***************************************** */
+/* *************** header ****************** */
+/* ***************************************** */
 .site-header {
   display: flex;
   justify-content: space-between;
@@ -83,9 +85,11 @@ img {
   letter-spacing: 1px;
 }
 
-/* main  */
-/* main article */
+/* ***************************************** */
+/* *************** main ******************** */
+/* ***************************************** */
 
+/* main article */
 .main-article {
   display: grid;
   grid-template-columns: 1fr;
@@ -136,6 +140,53 @@ img {
 .highlight {
   font-weight: 700;
 }
-/* recent-posts section */
 
+/* recent-posts section */
+.recent-posts {
+   display: grid;
+   gap: 2em;
+}
+.recent-posts-title {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.recent-post {
+  display: flex;
+  flex-direction: column;
+  gap: 1em
+}
+
+.recent-post-title, 
+.recent-post-summary {
+ margin: 0;
+}
+.recent-post-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.recent-post-image {
+  order: -2;
+  max-width: 374px;
+}
+
+.recent-post-summary {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #505050;
+  line-height: 1.25;
+}
+
+.recent-post-date {
+  order: -1;
+  color: #151515;
+  font-size: 0.75rem;
+}
+
+
+/* ***************************************** */
+/* *************** footer ****************** */
+/* ***************************************** */
 
