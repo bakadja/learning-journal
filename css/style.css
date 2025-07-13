@@ -13,8 +13,8 @@ body {
     ".... .... ...."
     ".... head ...."
     ".... main ...."
-    ".... foot ...."
-    ".... .... ....";
+    "foot foot foot"
+    ;
   gap: 2em 0;
 }
 
@@ -24,6 +24,8 @@ body {
 
 main {
   grid-area: main;
+  display: grid;
+  gap: 2em;
 }
 
 footer {
@@ -190,3 +192,30 @@ img {
 /* *************** footer ****************** */
 /* ***************************************** */
 
+footer {
+  background-color: #202020;
+  text-align: center;
+  font-size: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  justify-content: center;
+  align-items: center;
+  min-height: 105px;
+}
+
+.footer-title,
+.footer-copyright {
+  margin: 0;
+}
+.footer-title {
+  color: #ECECEC;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.footer-copyright {
+  display: block;
+  color: #D7D7D7;
+  font-weight: 400;
+}
