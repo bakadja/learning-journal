@@ -1,10 +1,12 @@
+html {
+  font-size: 16px;
+}
 html,
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-
 /* site layout */
 body {
   display: grid;
@@ -120,10 +122,11 @@ img {
 }
 
 .main-article-image {
+  width: 100%;
   max-height: 190px;
   max-width: 374px;
   object-fit: cover;
-  object-position: 0 -205px;
+  /* object-position: 0 -205px; */
   border-radius: 3px;
   display: block;
   margin-top: 1em;
@@ -218,4 +221,57 @@ footer {
   display: block;
   color: #D7D7D7;
   font-weight: 400;
+}
+
+
+
+/* media query for pc */
+
+@media(min-width: 1024px ) {
+  html {
+  font-size: 24px;
+}
+  body {
+  display: grid;
+  grid-template-columns: 5em repeat(6, 1fr) 5em;
+  grid-template-areas:
+    ".... .... .... .... .... .... .... ...."
+    ".... head head head head head head ...."
+    ".... main main main main main main ...."
+    "foot foot foot foot foot foot foot foot"
+    ;
+  gap: 2em 0;
+}
+
+
+/* ***************************************** */
+/* *************** header ****************** */
+/* ***************************************** */
+
+.site-logo-img {
+  max-width: 35px;
+}
+.site-nav {
+  flex-basis: 250px;
+}
+
+
+/* ***************************************** */
+/* *************** main ******************** */
+/* ***************************************** */
+.main-article-image {
+  width: 100%;
+  max-width: 100%;
+  max-height: 488px;
+  object-position: 0 -630px;
+}
+
+.recent-posts {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.recent-posts-title {
+  grid-column: span 3;
+}
+
 }
