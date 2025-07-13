@@ -268,10 +268,12 @@ footer {
 
 .recent-posts {
   grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
 }
 
 .recent-posts-title {
   grid-column: span 3;
+
 }
 
 }
