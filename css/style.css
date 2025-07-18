@@ -68,7 +68,6 @@ img {
 
 .site-title {
   font-weight: 700;
-  font-style: Bold;
   font-size: 0.9rem;
 }
 
@@ -97,7 +96,7 @@ img {
 .main-article {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1em;
+  gap: 1.5em;
 }
 
 .main-article-title ,
@@ -224,8 +223,63 @@ footer {
 }
 
 
+/* ***************************************** */
+/* *************** media query for tablet ** */
+/* ***************************************** */
+@media(min-width: 768px) {
+    html {
+    font-size: 20px;
+  }
 
-/* media query for pc */
+   body {
+  display: grid;
+  grid-template-columns: 5em repeat(4, 1fr) 5em;
+  grid-template-areas:
+    ".... .... .... .... ....  ...."
+    ".... head head head head  ...."
+    ".... main main main main  ...."
+    "foot foot foot foot foot  foot"
+    ;
+  gap: 2em 0;
+}
+
+/* *************** header ****************** */
+.site-logo-img {
+  max-width: 35px;
+}
+.site-nav {
+  flex-basis: 250px;
+}
+
+/* *************** main ******************** */
+.main-article-image {
+  max-width: 100%;
+  max-height: 488px;
+  object-position: 0 -630px;
+}
+
+/* .recent-posts {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+} */
+
+.recent-posts-title {
+  grid-column: 1 / -1;
+
+}
+
+.recent-post-image {
+  max-width: none;
+}
+
+
+}
+
+
+/* ***************************************** */
+/* *************** media query for pc ****** */
+/* ***************************************** */
+
 
 @media(min-width: 1024px ) {
   html {
@@ -233,7 +287,7 @@ footer {
 }
   body {
   display: grid;
-  grid-template-columns: 5em repeat(6, 1fr) 5em;
+  grid-template-columns: 5em repeat(10, 1fr) 5em;
   grid-template-areas:
     ".... .... .... .... .... .... .... ...."
     ".... head head head head head head ...."
@@ -244,36 +298,22 @@ footer {
 }
 
 
-/* ***************************************** */
-/* *************** header ****************** */
-/* ***************************************** */
 
-.site-logo-img {
-  max-width: 35px;
-}
-.site-nav {
-  flex-basis: 250px;
-}
-
-
-/* ***************************************** */
 /* *************** main ******************** */
-/* ***************************************** */
-.main-article-image {
-  width: 100%;
+/* .main-article-image {
   max-width: 100%;
   max-height: 488px;
   object-position: 0 -630px;
-}
+} */
 
-.recent-posts {
+/* .recent-posts {
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
-}
+} */
 
-.recent-posts-title {
+/* .recent-posts-title {
   grid-column: span 3;
 
-}
+} */
 
 }
