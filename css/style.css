@@ -124,7 +124,7 @@ img {
 
 .main-article-image {
   object-fit: cover;
-  /* object-position: 0 -205px; */
+  object-position: 50% 73%;
   border-radius: 3px;
   display: block;
   margin-top: 1em;
