@@ -292,6 +292,18 @@ footer {
     grid-area: d;
   }
 
+  /* recent-posts section */
+  .recent-posts {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .recent-posts-title {
+    grid-column: 1 / -1;
+  }
+
+  
+
+
 }
 /* 
  * Utility CSS class for reusable styling.
