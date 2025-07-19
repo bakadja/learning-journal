@@ -54,6 +54,7 @@ img {
 .site-header {
   display: grid;
   grid-template-columns: auto 1fr;
+  background-color: #fff;
 }
 
 .site-logo-container {
@@ -97,6 +98,7 @@ img {
  main {
   display: grid;
   gap: 2em;
+  background-color: #FAFAFA;
  }
 /* main article */
 .main-article {
