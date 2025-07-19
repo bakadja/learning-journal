@@ -26,8 +26,6 @@ body {
 
 main {
   grid-area: main;
-  display: grid;
-  gap: 2em;
 }
 
 footer {
@@ -96,6 +94,10 @@ img {
 /* *************** main ******************** */
 /* ***************************************** */
 
+ main {
+  display: grid;
+  gap: 2em;
+ }
 /* main article */
 .main-article {
   display: grid;
@@ -126,7 +128,7 @@ img {
 }
 
 .main-article-image {
- object-position: 50% 65%;
+ object-position: 50% 67%;
   border-radius: 3px;
   display: block;
   margin-top: 1em;
@@ -245,6 +247,50 @@ footer {
     ;
   gap: 2em 0;
 }
+
+/* *************** main ******************** */
+  main {
+    /* inherit the 12 columns placed with grid-template-areas, main take 12 column in areas  */
+    grid-template-columns: subgrid;
+  }
+    /* main article */
+  .main-article,
+  .recent-posts {
+    grid-column: 1 / -1;
+  }
+
+  .main-article {
+    grid-template-columns: 3em 1fr 3em;
+    grid-template-areas: 
+    ". t ."
+    ". h ."
+    ". p ."
+    "i i i"
+    ". d ."
+    ;
+  grid-template-rows: repeat(3, auto) minmax(100px, 490px) auto;
+    gap: 1em 0;
+  }
+  .main-article-date {
+    grid-area: t;
+  }
+
+  .main-article-title {
+    grid-area: h;
+  }
+
+  .main-article-intro {
+    grid-area: p;
+  }
+
+  .main-article-image {
+    grid-area: i;
+    object-position: 50% 75%;
+  }
+
+  .main-article-body {
+    grid-area: d;
+  }
 
 }
 /* 
