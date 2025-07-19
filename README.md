@@ -1,5 +1,5 @@
 # My Learning Journal
-
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a97edaef-2d55-4bd9-91f6-0221828cd007/deploy-status)](https://app.netlify.com/projects/charming-dango-3ec336/deploys)
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)](https://github.com/)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)](https://github.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -10,6 +10,7 @@ A personal blog documenting my journey as a bootcamp student, sharing what I've 
 
 - [About The Project](#about-the-project)
 - [Features](#features)
+- [Demo](#demo)
 - [Screenshots](#screenshots)
 - [Technologies](#technologies)
 - [Getting Started](#getting-started)
@@ -31,9 +32,11 @@ This project is a personal learning journal created to document my progress and 
 - **Blog Layout:** Clean and simple blog layout with a main article and recent posts.
 - **Dynamic Content:** Easily update content by modifying the HTML.
 
-## Screenshots
+## Demo
 
-*Replace these with your own screenshots.*
+[Live Demo](https://charming-dango-3ec336.netlify.app)
+
+## Screenshots
 
 **Desktop View**
 ![Desktop Screenshot](images/post-desktop.png)
