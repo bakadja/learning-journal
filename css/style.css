@@ -66,6 +66,7 @@ img {
 
 .site-logo-img {
   max-width: 24px;
+  max-height: 24px;
 }
 
 .site-title {
@@ -250,30 +251,6 @@ footer {
   flex-basis: 250px;
 }
 
-/* *************** main ******************** */
-.main-article-image {
-  max-width: 100%;
-  max-height: 488px;
-  object-position: 0 -630px;
-}
-
-/* .recent-posts {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-} */
-
-.recent-posts-title {
-  grid-column: 1 / -1;
-
-}
-
-.recent-post-image {
-  max-width: none;
-}
-
-
-}
-
 
 /* ***************************************** */
 /* *************** media query for pc ****** */
@@ -295,24 +272,8 @@ footer {
     ;
   gap: 2em 0;
 }
+}
 
 
-
-/* *************** main ******************** */
-/* .main-article-image {
-  max-width: 100%;
-  max-height: 488px;
-  object-position: 0 -630px;
-} */
-
-/* .recent-posts {
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-} */
-
-/* .recent-posts-title {
-  grid-column: span 3;
-
-} */
 
 }
