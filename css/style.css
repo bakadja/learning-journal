@@ -223,34 +223,6 @@ footer {
 }
 
 
-/* ***************************************** */
-/* *************** media query for tablet ** */
-/* ***************************************** */
-@media(min-width: 768px) {
-    html {
-    font-size: 20px;
-  }
-
-   body {
-  display: grid;
-  grid-template-columns: 5em repeat(4, 1fr) 5em;
-  grid-template-areas:
-    ".... .... .... .... ....  ...."
-    ".... head head head head  ...."
-    ".... main main main main  ...."
-    "foot foot foot foot foot  foot"
-    ;
-  gap: 2em 0;
-}
-
-/* *************** header ****************** */
-.site-logo-img {
-  max-width: 35px;
-}
-.site-nav {
-  flex-basis: 250px;
-}
-
 
 /* ***************************************** */
 /* *************** media query for pc ****** */
@@ -272,7 +244,7 @@ footer {
     ;
   gap: 2em 0;
 }
-}
+
 
 
 
