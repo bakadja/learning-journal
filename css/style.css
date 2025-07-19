@@ -239,6 +239,7 @@ footer {
   font-size: 24px;
 }
   body {
+    max-width: 1920px;
   display: grid;
   grid-template-columns: 2.5em repeat(12, 1fr) 2.5em;
   grid-template-areas:
@@ -316,9 +317,43 @@ footer {
     grid-template-rows: auto;
     gap: 0.5em;
   }
-
-
 }
+
+/* 
+ * Safari-specific fixes using @supports for -webkit-hyphens.
+ * Safari has unique rendering issues with CSS Grid and overflow handling.
+ * - Setting overflow: hidden and min-height: 0 on grid containers and children prevents unwanted overflow and layout bugs.
+ * - Ensures images scale correctly inside grid items by forcing block display and max dimensions.
+ * This block only applies in Safari (and browsers supporting -webkit-hyphens), 
+ * helping maintain consistent layouts and image sizing across browsers.
+ */
+@supports (-webkit-hyphens: none) {
+
+  /* Prevent grid overflow issues in Safari by restricting overflow and setting min-height */
+  .main-article, 
+  .recent-post {
+    overflow: hidden;
+    min-height: 0;
+  }
+
+  /* Ensure images display and scale correctly inside grid containers */
+  .main-article-image,
+  .recent-post-image {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Apply overflow and min-height to all direct children of .main-article for Safari grid bug workaround */
+  .main-article > * {
+    min-height: 0;
+    overflow: hidden;
+  }
+}
+
 /* 
  * Utility CSS class for reusable styling.
  * Apply this class to elements to quickly add predefined styles.
