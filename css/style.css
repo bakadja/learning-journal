@@ -54,8 +54,8 @@ img {
 /* *************** header ****************** */
 /* ***************************************** */
 .site-header {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 .site-logo-container {
@@ -76,20 +76,21 @@ img {
 
 /* nav */
 .site-nav {
-  flex-basis: 150px;
+  display: flex;
+  margin-left: auto;
   font-weight: 600;
   font-size: 0.8rem;
 }
 
 .nav-list {
   display: flex;
-  justify-content: space-between;
 }
 
 .nav-item {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
 
 /* ***************************************** */
 /* *************** main ******************** */
@@ -235,17 +236,23 @@ footer {
 }
   body {
   display: grid;
-  grid-template-columns: 5em repeat(10, 1fr) 5em;
+  grid-template-columns: 2.5em repeat(12, 1fr) 2.5em;
   grid-template-areas:
-    ".... .... .... .... .... .... .... ...."
-    ".... head head head head head head ...."
-    ".... main main main main main main ...."
-    "foot foot foot foot foot foot foot foot"
+    ".... .... .... .... .... .... .... .... .... .... .... .... .... .... "
+    ".... head head head head head head head head head head head head .... "
+    ".... main main main main main main main main main main main main .... "
+    "foot foot foot foot foot foot foot foot foot foot foot foot foot foot "
     ;
   gap: 2em 0;
 }
 
-
-
-
 }
+/* 
+ * Utility CSS class for reusable styling.
+ * Apply this class to elements to quickly add predefined styles.
+ * Useful for maintaining consistency and reducing code duplication.
+ */
+
+ .mr {
+    margin-right: 2em;
+ }
