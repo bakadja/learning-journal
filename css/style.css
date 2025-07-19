@@ -295,13 +295,25 @@ footer {
   /* recent-posts section */
   .recent-posts {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
   }
   
   .recent-posts-title {
     grid-column: 1 / -1;
   }
 
+  .second {
+    grid-column: 2;
+  }
+
+  .third {
+    grid-column: 3;
+  }
   
+  .recent-post {
+    grid-template-rows: auto;
+    gap: 0.5em;
+  }
 
 
 }
